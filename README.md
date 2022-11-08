@@ -1,4 +1,4 @@
-# ansible-nginx
+# ansible-nodejs
 
 Setups NodeJS from nodesource APT packages
 
