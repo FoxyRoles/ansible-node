@@ -2,16 +2,20 @@
 
 Setups NodeJS from nodesource APT packages
 
+## Requirements
+
+- `ansible-core` 2.19 or newer.
+
 ## Example playbook
 
 ```yaml
 ---
 - hosts: myserver
-  user: root
-  sudo: False
+  remote_user: root
+  become: false
   roles:
-   - sunfoxcz.nodejs
-     node_version: 12
+    - role: sunfoxcz.nodejs
+      node_version: 12
 ```
 
 ## Mandatory variables

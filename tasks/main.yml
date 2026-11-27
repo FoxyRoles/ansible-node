@@ -32,7 +32,7 @@
   when: node_legacy_repository is changed or node_repository is changed
 
 - name: nodejs and needed packages present
-  apt:
+  ansible.builtin.apt:
     pkg:
       - build-essential
       - nodejs

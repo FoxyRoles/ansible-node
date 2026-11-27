@@ -1,0 +1,26 @@
+---
+
+galaxy_info:
+  namespace: sunfoxcz
+  role_name: nodejs
+  author: Tomas Jacik
+  description: Install a selected Node.js version from the NodeSource APT repository.
+  company: sunfoxcz
+  license: MIT
+  min_ansible_version: '2.19'
+  platforms:
+    - name: Debian
+      versions:
+        - bookworm
+        - trixie
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+        - noble
+        - resolute
+  galaxy_tags:
+    - nodejs
+    - development
+
+dependencies: []
